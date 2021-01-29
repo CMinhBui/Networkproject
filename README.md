@@ -1,24 +1,29 @@
-#Network Protocols
+# Network Protocols
 
 A toy project, implemented reliable data transfer network protocol to transfer string to 3 server simultaneously using raw socket
 
 compile:
 
+```
 javac -cp rocksaw-1.1.0.jar; *.java
+```
 
 
 run servers:
 
+```
 java -cp rocksaw-1.1.0.jar; runServer <Server front end port> <server MD5 port> <Server SHA256 port>
+```
 
-example: java -cp rocksaw-1.1.0.jar; runServer 3200 1600 100
+example: `java -cp rocksaw-1.1.0.jar; runServer 3200 1600 100`
 
 
 run client: 
 
+```
 java -cp rocksaw-1.1.0.jar; runClient <Server's ip address> <ServerFronend's port> <Message>
-
-example: java -cp rocksaw-1.1.0.jar; runClient 192.168.100.10 3200 helloWorld!
+```
+example: ``java -cp rocksaw-1.1.0.jar; runClient 192.168.100.10 3200 helloWorld!``
 
 
 Note:
